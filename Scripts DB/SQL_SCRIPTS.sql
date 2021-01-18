@@ -8,8 +8,8 @@ DESC_ROLE varchar(50),
 primary key (ID_ROLE_USR)
 );
 
-#drop table semillerosBD.tUsuariosSystem
-CREATE TABLE semillerosBD.tUsuariosSystem (
+#drop table semillerosBD.t_usuarios_system
+CREATE TABLE semillerosBD.t_usuarios_system (
 	ID_USR int not null AUTO_INCREMENT,
     ID_ROLE_USR int not null,
     NOMBRE_USR varchar(50),
@@ -31,7 +31,7 @@ VALUES
 
 
 ##INSERTAMOS A LOS USUARIOS
-INSERT INTO semillerosBD.tUsuariosSystem
+INSERT INTO semillerosBD.t_usuarios_system
 (ID_ROLE_USR,
 NOMBRE_USR,
 PSW_USR)

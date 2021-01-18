@@ -1,0 +1,7 @@
+#   BOSETO PARA LOGIN
+curl http://localhost:8080/Login/admin/admin123  
+#   Bosetos de prueba
+curl http://localhost:8080/Login/todos-los-usr
+curl http://localhost:8080/Login/todos-x-usr
+curl http://localhost:8080/Login/todos-x-like
+curl http://localhost:8080/Login/todos-x-parametro

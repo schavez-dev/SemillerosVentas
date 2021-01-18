@@ -4,21 +4,27 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Data;
 
-@Entity
-@Table(name = "tUsuariosSystem")
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
+@Entity
+//@Table(name = "tUsuariosSystem", schema="semillerosBD")
+@Table(name = "t_usuarios_system", schema = "semillerosBD")
 public class UserSystem {
 
 	@Id
-	@Column
+	@Column(name = "ID_USR", nullable = false, unique = true)
 	private int id;
-	@Column
+	@Column(name = "ID_ROLE_USR", nullable = false, unique = true)
 	private int idRole;
-	@Column
+	@Column(name = "NOMBRE_USR")
 	private String nameUsr;
-	@Column
-	private String pswUsr;	
-	
+	@Column(name = "PSW_USR")
+	private String pswUsr;
+
 }
